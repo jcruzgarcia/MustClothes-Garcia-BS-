@@ -1,0 +1,102 @@
+.navBar {
+    background-color: #354259;
+}
+
+.logo {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.leftNav{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    
+}
+
+.rightNav{
+    align-items: center;   
+    justify-content: flex-end;
+    display: flex;
+}
+
+.body-container{
+    background-color: #ECE5C7;
+}
+
+.banner{
+    text-align: center;
+}
+
+h3{
+    color: #354259
+}
+
+.col-4{
+    text-align: center;
+}
+
+.clothing{
+    display: flex;
+    font-weight: 600;
+    color: #7e7c67;
+    justify-content: center;
+}
+
+.price{
+    display: flex;
+    font-weight: 700;
+    color: #36332d;
+    justify-content: center;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #36332d;
+    
+}
+
+h4{
+    color: aliceblue;
+    text-align: center;
+    font-size: medium;
+}
+
+h5{
+    color: aliceblue;
+    text-align: center;
+    font-size: x-small;
+}
+
+.redes{
+    text-align: center;
+    justify-content: center;
+
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    border-style: outset;
+    padding: 30px;
+}
