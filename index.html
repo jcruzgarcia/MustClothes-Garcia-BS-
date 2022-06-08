@@ -7,45 +7,63 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--CSS Personalizado-->
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Must Clothes</title>
 </head>
 <body class="body-container">
     <header class="header-container">
-        <nav class="navBar p-3">
-                    <ul class="leftNav nav">
-                        <li class="nav-item">
-                            <h1><a href="index.html" class="logo">Must Clothes<a><h1>
-                          </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Hombre</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Mujer</a>
-                        </li>
-                        <li class="nav-item">
-                            <input class="rounded-3" type="search">
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Quiero vender!</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Carrito</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="usuario.html">Usuario</a>
-                        </li>
-                  </ul>
-        </nav>
+      <nav class="navBar navbar navbar-expand-lg">
+        <a class="logo navbar-brand p-3" href="index.html" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">Must Clothes</a>
+        <div class="hombre__mujer">
+          <ul class="hombre__mujer rightNav">
+            <li class="nav-item">
+              <a class="nav-link p-2" aria-current="page" href="hombre.html">Hombre</a>
+            </li>
+            |
+            <li class="nav-item p-2">
+              <a class="nav-link" href="mujer.html">Mujer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navBar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="leftNav navbar-nav me-auto mb-2 mb-lg-0">
+              <form class="d-flex" role="search">
+                <input class="searchBar form-control me-2 rounded-4" type="search" placeholder="Buscar" aria-label="Search" >
+              </form>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Quiero vender!</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html"><img src="./img/carrito.png" alt="Mi carrito" height="30px"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="usuario.html"><img src="./img/user.png" alt="Mi usuario" height="30px"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
+    <main class="mb-5">
         <section class="banner p-5">
-            <h3>Comprá y vendé ropa de segunda mano con tan sólo un par de clicks!</h3>
+            <h3 data-aos="fade-down"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="700">Comprá y vendé ropa de segunda mano con tan sólo un par de clicks!</h3>
         </section>
         <section class="container">
             <div class="row">
-                <div class="col-lg-4 col-m-4 col-s-12">
+                <div class="col-lg-4 col-m-6 col-s-12">
+                  <div class="card" style="width: 20rem;">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -66,10 +84,17 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
+                        <div class="cardColor card-body">
+                            <p class="card-text clothing">Chomba de pique celeste Lacoste - L<p>
+                            <p class="card-text price">$3000</p>
+                            <p class="card-text location">Rosario - Santa Fe</p>
+                        </div>
                       </div>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-m-4 col-s-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="col-lg-4 col-m-6 col-s-12">
+                  <div class="card" style="width: 20rem;">
+                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./img/chombalacoste.jpeg" class="d-block w-100" alt="chombaLacoste">
@@ -81,18 +106,25 @@
                             <img src="./img/chombalacoste.jpeg" class="d-block w-100" alt="chombaLacoste">
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
+                        <div class="cardColor card-body">
+                            <p class="card-text clothing">Chomba de pique celeste Lacoste - L<p>
+                            <p class="card-text price">$3000</p>
+                            <p class="card-text location">Rosario - Santa Fe</p>
+                        </div>
                       </div>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-m-4 col-s-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="col-lg-4 col-m-12 col-s-12">
+                  <div class="card" style="width: 20rem;">
+                    <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./img/chombalacoste.jpeg" class="d-block w-100" alt="chombaLacoste">
@@ -104,51 +136,35 @@
                             <img src="./img/chombalacoste.jpeg" class="d-block w-100" alt="chombaLacoste">
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
+                        <div class="cardColor card-body">
+                            <p class="card-text clothing">Chomba de pique celeste Lacoste - L<p>
+                            <p class="card-text price">$3000</p>
+                            <p class="card-text location">Rosario - Santa Fe</p>
+                        </div>
                       </div>
+                  </div>
                 </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-m-4 col-s-12">
-                    <p class="clothing">Chomba de pique celeste Lacoste - L</p>
-                    <p class="price">$3000</p>
-                    <p class="location">Rosario - Santa Fe</p>
-                </div>
-                <div class="col-lg-4 col-m-4 col-s-12">
-                    <p class="clothing">Chomba de pique celeste Lacoste - L</p>
-                    <p class="price">$3000</p>
-                    <p class="location">Rosario - Santa Fe</p>
-                </div>
-                <div class="col-lg-4 col-m-4 col-s-12">
-                    <p class="clothing">Chomba de pique celeste Lacoste - L</p>
-                    <p class="price">$3000</p>
-                    <p class="location">Rosario - Santa Fe</p>
-                </div>
-            </div>
         </section>
     </main>
     <footer class="p-3">
         <div>
-            <h4>Seguinos en nuestras redes</h4> 
-        </div>
-        <div>
                 <ul class="redes nav p-2">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Instagram</a>
+                      <a class="nav-link" href="#"><img src="./img/insta.png" alt="Instagram" width="30px"></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Whatsapp</a>
+                      <a class="nav-link" href="#"><img src="./img/whatsapp.png" alt="Whatsapp" width="30px"></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">Facebook</a>
+                      <a class="nav-link"><img src="./img/facebook.png" alt="Facebook" width="30px"></a>
                     </li>
                   </ul>
         </div>
@@ -158,5 +174,10 @@
     </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--AOS anim-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

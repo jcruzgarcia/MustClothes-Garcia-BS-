@@ -1,18 +1,21 @@
 .navBar {
     background-color: #354259;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .logo {
     text-decoration: none;
     color: aliceblue;
     font-family: 'Libre Baskerville', serif;
-    font-size: 0.7em;
+    font-size: 1.7em;
     font-weight: 600;
 }
 
 .nav-link{
     text-decoration: none;
-    color: aliceblue;
+    color: aliceblue
 }
 .nav-link{
     text-decoration: none;
@@ -20,16 +23,10 @@
 }
 
 .leftNav{
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     display: flex;
     
-}
-
-.rightNav{
-    align-items: center;   
-    justify-content: flex-end;
-    display: flex;
 }
 
 .body-container{
@@ -41,30 +38,39 @@
 }
 
 h3{
-    color: #354259
+    color: #354259;
+    font-weight: 600;
 }
 
 .col-4{
     text-align: center;
 }
 
+
+.colorCard{
+    background-color: #ECE5C7;
+}
 .clothing{
     display: flex;
     font-weight: 600;
     color: #7e7c67;
-    justify-content: center;
+    justify-content: start;
+    text-decoration: none;
 }
 
 .price{
     display: flex;
     font-weight: 700;
     color: #36332d;
-    justify-content: center;
+    justify-content: start;
+    text-decoration: none;
 }
 
 .location{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    text-decoration: none;
+    color:rgb(175, 166, 166);
 }
 
 footer{
@@ -97,6 +103,96 @@ h5{
 }
 
 .formulario{
-    border-style: outset;
+    border-style:ridge;
     padding: 30px;
+    border-color: #7e7c67;
+}
+
+.cardColor{
+    background-color: #ECE5C7;
+}
+
+.totalPrice{
+    text-align: start;
+    color: #354259;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #cac4a9;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.totalPrice2{
+    text-align: start;
+    color: #354259;
+    font-weight: 700;
+    font-size: small;
+}
+
+.totalPrice3{
+    text-align: right;
+    color: #354259;
+    font-size: x-large;
+    font-weight: 650;
+}
+
+.toCheckout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightNav{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.hombre__mujer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Card1{
+    width: 17rem;
+}
+
+.registrarseBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrarse{
+    color: #354259;
+    text-align: left;
+    font-size: medium;
+    font-weight: 700;
+    border-bottom: #354259 solid;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+.subtitle__user{
+    color: #354259;
+    text-align: center;
+    font-size: medium;
+}
+
+.option__user{
+    color: #354259;
+    font-size: small;
+    text-align: center;
 }
